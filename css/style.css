@@ -303,3 +303,38 @@ section .heading h2{
 .timeline-heading h4 {
     color:#25B6A6;
 }
+
+
+
+/* FORMATIONS */
+
+#formation .heading h2{
+    margin: 25px 0px;
+}
+
+
+.formation-block {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+    background: rgba(37, 182, 160, 0.201);
+    border-radius: 5px;
+    border: 1px solid #25B6A0;
+    box-shadow: 0 1px 6px rgba(0,0,0, 0.175);
+    margin-bottom: 20px;
+}
+
+.formation-block span {
+    font-size: 35px;
+}
+
+.formation-block h3 {
+    color: #25B6A6;
+    margin: 15px 0;
+}
+
+.formation-block h4 {
+    margin-bottom: 20px;
+    font-weight: normal;
+}
