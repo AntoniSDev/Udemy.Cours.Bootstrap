@@ -22,7 +22,7 @@ img {
 }
 
 section {
-    padding: 65px 0 40px 0;
+    padding: 65px 0 80px 0;
 }
 
 section .heading {
@@ -47,6 +47,29 @@ section .heading h2{
 
 
 
+
+
+/* NAVBAR */
+.navbar {
+    background-color: #25B6A6;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 1px solid white;
+}
+.navbar-nav {
+    margin: 0 auto;
+    text-align: center;
+}
+.nav-link {
+    color: white !important;
+    margin: 0 6px;
+}
+.nav-link.active,
+.nav-link:hover {
+    background-color: white;
+    color: #25B6A0 !important;
+}
 
 
 
@@ -186,6 +209,7 @@ section .heading h2{
 #skills .progress-bar h5 {
     text-shadow: 1px 1px black;
     margin-bottom: 3px;
+    font-size: 14px;
 }
 
 
@@ -342,6 +366,12 @@ section .heading h2{
 
 
 
+
+
+
+
+
+
 /* PORTFOLIO */
 
 #portfolio {
@@ -366,4 +396,35 @@ section .heading h2{
 
 #portfolio .col-md-4 {
     margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+footer {
+    background-color: #fff;
+    padding: 20px 0 250px;
+}
+footer span {
+    color:#25B6A6;
+    font-size: 25px;
+    line-height: 35px;
+}
+footer span:hover {
+    font-size: 27px;
+}
+footer h5 {
+    color: white;
+    font-weight: normal;
 }
