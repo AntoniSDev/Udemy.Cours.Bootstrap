@@ -22,13 +22,25 @@ img {
 }
 
 section {
-    padding: 65px 0 80px 0;
+    padding: 65px 0 40px 0;
 }
 
 section .heading {
     text-align: center;
-    padding-bottom: 40px;
 }
+
+section .heading h2{
+    text-transform: uppercase;
+}
+
+.divider {
+    width: 100px;
+    height: 2px;
+    background-color: #25B6A6;
+    margin: 0 auto 20px;
+}
+
+
 
 
 
@@ -53,7 +65,7 @@ section .heading {
 #about button {
     cursor: pointer;
     border: none;
-    color: rgb(37, 182, 160);
+    color: #25B6A6;
     background-color: #ffffff00;  
     outline: none;
 }
@@ -132,12 +144,46 @@ section .heading {
 .button1 {
     color: grey;
     background-color: rgba(37, 182, 160, 0.201);   
-    margin: 30px;
+    margin-top: 25px;
     font-weight: bold;
     display: inline-block;
     transition: all 0.5s ease-in 0s;
 }
 
+.button1:hover {
+    border-color: #25B6A0;
+}
 
 
 
+
+
+
+
+
+
+
+
+/*   SKILLS   */
+
+#skills .heading h2 {
+    color: #25B6A0; 
+}
+
+#skills .progress {
+    height: 40px;
+    margin: 25px 15px;
+}
+
+#skills .progress:last-child {
+    margin-bottom: 0px;
+}
+
+#skills .progress-bar {
+    background-color: #25B6A0;
+}
+
+#skills .progress-bar h5 {
+    text-shadow: 1px 1px black;
+    margin-bottom: 3px;
+}
