@@ -48,8 +48,9 @@ section .heading h2{
    color: #25B6A6;
 }
 
-
-
+.timeline-row .timeline-content:before {
+    visibility: hidden !important;
+}
 
 
 
