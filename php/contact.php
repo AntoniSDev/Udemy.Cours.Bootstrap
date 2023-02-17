@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
 // function des verfication field mail et tel
 
 function isEmail($coco) {
@@ -145,4 +145,4 @@ else
 {
     echo $responseArray['message'];
 }
-?> -->
+?>
