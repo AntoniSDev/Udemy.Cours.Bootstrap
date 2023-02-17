@@ -1,4 +1,14 @@
-<?php
+<!-- <?php
+// function des verfication field mail et tel
+
+function isEmail($coco) {
+    return filter_var($coco, FILTER_VALIDATE_EMAIL);
+}
+function isPhone($zozo) {
+    return preg_match("/^[0-9 ]*$/",$zozo);
+}
+
+
 // https://github.com/google/recaptcha
 
 // require ReCaptcha class 
@@ -22,8 +32,8 @@ $fields = array('firstname' => 'Firstname', 'name' => 'Name', 'email' => 'Email'
 $okMessage = 'Message envoyé, merci ! A très bientôt !';
 $errorMessage = 'Erreur, merci de réessayer.';
 
-// à voir Plus tard
-$recaptchaSecret = '6LdYCcQZAAAAAPWljYt3ohRpCSas0sROJ4Y9okd-';
+// cle recaptcha coté server 
+$recaptchaSecret = '6LfNfookAAAAAF9ywK4HqyYiQljAuTJDNoCY3FGh';
 
 // Test pour print les données entrées dans le formulaire apres un submit
 // print_r($_POST);
@@ -38,10 +48,10 @@ try
 
         // validate the ReCaptcha, if something is wrong, we throw an Exception, 
         // i.e. code stops executing and goes to catch() block    
-        #if (!isset($_POST['g-recaptcha-response'])) 
-        #{
-        #    throw new \Exception('ReCaptcha is not set.');
-        #}
+        if (!isset($_POST['g-recaptcha-response'])) 
+        {
+            throw new \Exception('ReCaptcha is not set.');
+        }
 
         // do not forget to enter your secret key in the config above 
         // from https://www.google.com/recaptcha/admin
@@ -49,39 +59,72 @@ try
         //useless
         //$recaptcha = new \ReCaptcha\ReCaptcha($recaptchaSecret, new \ReCaptcha\RequestMethod\CurlPost());        
 
-		#$recaptcha = new \ReCaptcha\ReCaptcha($recaptchaSecret);		
+		$recaptcha = new \ReCaptcha\ReCaptcha($recaptchaSecret);		
 
         // we validate the ReCaptcha field together with the user's IP address        
 
-        #$response = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
+        $response = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
 
-        #if (!$response->isSuccess()) 
-        #{
-        #    throw new \Exception('ReCaptcha was not validated.');
-        #}    
+        if (!$response->isSuccess()) 
+        {
+            throw new \Exception('ReCaptcha was not validated.');
+        }    
 
-        // everything went well, we can compose the message, as usually        
+        // everything went well, we can compose the message, as usually  
 
-        $emailText = "You have new message from contact form\n=============================\n";
+        
+            
+       
 
-        foreach ($_POST as $key => $value) {
-            // si les $key des fields sont pas vides
-            if (isset($fields[$key])) 
-            {
-                // alors tu concatene  .=  la key et la value  
-                $emailText .= "$fields[$key]: $value\n";
-            }
+        $isValid = true;
+        
+        // if la fonction isEmail renvoie un truc pas vide quand on lui donne ce qui ete dans son field
+        if(isEmail($_POST['email']))
+        {
+            echo "adresse mail valide";
         }
+        else
+        {
+            echo "mail pas valide";
+            $isValid = false;
+        };
 
-        $headers = array('Content-Type: text/plain; charset="UTF-8";',
-            'From: ' . $from,
-            'Reply-To: ' . $from,
-            'Return-Path: ' . $from,
-        );
-        // fonction mail official php
-        mail($sendTo, $subject, $emailText, implode("\n", $headers));
-        // osef c'est pour du ajax
-        $responseArray = array('type' => 'success', 'message' => $okMessage);
+        if(isPhone($_POST['phone']))
+        {
+            echo $_POST['phone'];
+        }
+        else
+        {
+            echo "ceci n'est pas un numéro de téléphone valide";
+            $isValid = false;
+        };
+        // if variable isValid true (rien = par defaut )
+        if($isValid)
+        {
+            $emailText = "You have new message from contact form\n=============================\n";
+
+            foreach ($_POST as $key => $value) {
+                // si les $key des fields sont pas vides
+                if (isset($fields[$key])) 
+                {
+                    // alors tu concatene  .=  la key et la value  
+                    $emailText .= "$fields[$key]: $value\n";
+                }
+            }
+    
+            $headers = array('Content-Type: text/plain; charset="UTF-8";',
+                'From: ' . $from,
+                'Reply-To: ' . $from,
+                'Return-Path: ' . $from,
+            );
+            // fonction mail official php
+            mail($sendTo, $subject, $emailText, implode("\n", $headers));
+            // osef c'est pour du ajax
+            $responseArray = array('type' => 'success', 'message' => $okMessage);
+        }
+        else {
+            echo "mail ou telephone pas valides, on envoie rien";
+        };       
     }
 }
 
@@ -102,4 +145,4 @@ else
 {
     echo $responseArray['message'];
 }
-?>
+?> -->
