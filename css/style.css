@@ -36,16 +36,16 @@ section .heading h2{
 .divider {
     width: 100px;
     height: 2px;
-    background-color: #25B6A6;
+    background-color: #00cbbc;
     margin: 0 auto 20px;
 }
 
 .heading h2 {
-    color: #25B6A0; 
+    color: #00cbbc; 
 }
 
 .etoile {
-   color: #25B6A6;
+   color: #00cbbc;
 }
 
 .timeline-row .timeline-content:before {
@@ -66,7 +66,7 @@ section .heading h2{
 
 /* NAVBAR */
 .navbar {
-    background-color: #25B6A6;
+    background-color: #00cbbc;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: bold;
@@ -83,7 +83,7 @@ section .heading h2{
 .nav-link.active,
 .nav-link:hover {
     background-color: white;
-    color: #25B6A0 !important;
+    color: #00cbbc !important;
 }
 
 
@@ -104,7 +104,7 @@ section .heading h2{
 #about button {
     cursor: pointer;
     border: none;
-    color: #25B6A6;
+    color: #00cbbc;
     background-color: #ffffff00;  
     outline: none;
 }
@@ -167,17 +167,12 @@ section .heading h2{
 
 
 #about {
-    background-color: rgba(37, 182, 160, 0.201);    
+    background-color: #80ffff85;    
 }
 
 .profile-picture {
     text-align: center;
     margin: 0px auto 30px;
-    filter: grayscale(1);
-	-webkit-filter: grayscale(1);
-	-moz-filter: grayscale(1);
-	-o-filter: grayscale(1);
-	-ms-filter: grayscale(1);
 }
 
 #about .heading h1 {
@@ -187,7 +182,7 @@ section .heading h2{
 
 .button1 {
     color: grey;
-    background-color: rgba(37, 182, 160, 0.201);   
+    background-color: #80ffff85;   
     margin-top: 25px;
     font-weight: bold;
     display: inline-block;
@@ -195,7 +190,7 @@ section .heading h2{
 }
 
 .button1:hover {
-    border-color: #25B6A0;
+    border-color: #00cbbc;
 }
 
 
@@ -237,7 +232,7 @@ section .heading h2{
 }
 
 #skills .progress-bar {
-    background-color: #25B6A0;
+    background-color: #00cbbc;
 }
 
 #skills .progress-bar h5 {
@@ -280,7 +275,7 @@ section .heading h2{
 
 
 #experience {
-    background-color: rgba(37, 182, 160, 0.201) ;
+    background-color: #80ffff85 ;
 }
 
 .divider.white {
@@ -292,7 +287,7 @@ background:#eee;
 }
 
 .timeline-content{
-    border: 1px solid #25B6A0;
+    border: 1px solid #00cbbc;
 }
 
 
@@ -386,7 +381,7 @@ background:#eee;
     color: #ffffff;
     line-height: 100%;
     padding: 10px;
-    border: 2px solid #25B6A6;
+    border: 2px solid #00cbbc;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
     border-radius: 100px;
@@ -413,7 +408,7 @@ background:#eee;
 
 .timeline-row:nth-child(even) .timeline-content:after {
     left: -40px;
-    border-right: 16px solid #25B6A6;
+    border-right: 16px solid #00cbbc;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
 }
@@ -448,7 +443,7 @@ background:#eee;
 
 .timeline-row:nth-child(odd) .timeline-content:after {
     right: -40px;
-    border-left: 18px solid #25B6A6;
+    border-left: 18px solid #00cbbc;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
 }
@@ -516,7 +511,7 @@ background:#eee;
         right: auto;
         left: -39px;
         top: 32px;
-        border-right: 18px solid #25B6A6;
+        border-right: 18px solid #00cbbc;
         border-left: inherit;
     }
     .timeline.animated .timeline-row:nth-child(odd) .timeline-content {
@@ -601,9 +596,9 @@ background:#eee;
     margin: 0 auto;
     text-align: center;
     padding: 30px;
-    background: rgba(37, 182, 160, 0.201);
+    background: #80ffff85;
     border-radius: 5px;
-    border: 1px solid #25B6A0;
+    border: 1px solid #00cbbc;
     box-shadow: 0 1px 6px rgba(0,0,0, 0.175);
     margin-bottom: 20px;
 }
@@ -613,7 +608,7 @@ background:#eee;
 }
 
 .formation-block h3 {
-    color: #25B6A6;
+    color: #00cbbc;
     margin: 15px 0;
 }
 
@@ -637,7 +632,7 @@ background:#eee;
 /* PORTFOLIO */
 
 #portfolio {
-    background-color: rgba(37, 182, 160, 0.201);;
+    background-color: #80ffff85;;
 }
 
 #portfolio .heading h2 {
@@ -675,12 +670,12 @@ background:#eee;
 
 /* FOOTER */
 footer {
-    background-color: rgba(37, 182, 160, 0.201) ;
+    background-color: #80ffff85 ;
     
     padding: 20px 0 250px;
 }
 footer span {
-    color:#25B6A6;
+    color:#00cbbc;
     font-size: 25px;
     line-height: 35px;
 }
