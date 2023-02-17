@@ -225,6 +225,7 @@ section .heading h2{
 #skills .progress {
     height: 40px;
     margin: 25px 15px;
+    background-color: #7effff80 ;
 }
 
 #skills .progress:last-child {
@@ -236,8 +237,8 @@ section .heading h2{
 }
 
 #skills .progress-bar h5 {
-    text-shadow: 1px 1px black;
-    margin-bottom: 3px;
+    text-shadow: 1px 1px #005858;
+    margin-bottom: -1px;
     font-size: 14px;
 }
 
@@ -280,10 +281,6 @@ section .heading h2{
 
 .divider.white {
     background-color: white;
-}
-
-body{margin-top:20px;
-background:#eee;
 }
 
 .timeline-content{
