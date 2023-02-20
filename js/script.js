@@ -13,14 +13,22 @@
 
 
 
-const audio = new Audio("docs/mario.mp3");
+const marial = new Audio("docs/marial.mp3");
 
 $ ("#marial").click (function (){
 
-audio.play();
+marial.play();
 
 }); 
 
+
+const mariol = new Audio("docs/mariol.mp3");
+
+$ ("#mariol").click (function (){
+
+mariol.play();
+
+}); 
 
 
 

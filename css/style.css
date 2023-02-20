@@ -36,16 +36,24 @@ section .heading h2{
 .divider {
     width: 100px;
     height: 2px;
-    background-color: #00cbbc;
-    margin: 0 auto 20px;
+    background-color: #ffcb9a;
+    margin: 0 auto 58px;
 }
 
+.dividerr {    
+    width: 100px;
+    height: 2px;
+    background-color: #2c3531;
+    margin: 0 auto 58px;
+}
+
+
 .heading h2 {
-    color: #00cbbc; 
+    color: #d1e8e2; 
 }
 
 .etoile {
-   color: #00cbbc;
+   color: #ffcb9a;
 }
 
 .timeline-row .timeline-content:before {
@@ -66,29 +74,38 @@ section .heading h2{
 
 
 
+
+
+
+
 /* NAVBAR */
 .navbar {
-    background-color: black;
+    background-color: #2c3531;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: bold;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #d9b08c;
+    border-top: 1px solid #d9b08c;
 }
 .navbar-nav {
     margin: 0 auto;
     text-align: center;
 }
 .nav-link {
-    color: white !important;
+    color: #ffcb9a !important;
     margin: 0 6px;
 }
 .nav-link.active,
 .nav-link:hover {
-    background-color: black;
-    color: white !important;    
-    border: solid 5px white;
+    background-color: #2c3531;
+    color: #ffcb9a !important;    
+    border: solid 2px #ffcb9a;
     border-radius: 0.375rem;
 }
+
+
+
+
 
 
 
@@ -108,34 +125,32 @@ section .heading h2{
 #about button {
     cursor: pointer;
     border: none;
-    color: #00CBBC;
+    color: #d1e8e2;
     background-color: #ffffff00;  
     outline: none;   
-    text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px, rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px, rgb(0, 0, 0) 0.705713px 2.91581px 0px, rgb(0, 0, 0) -0.287171px 2.98622px 0px, rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px, rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px, rgb(0, 0, 0) -2.94502px -0.571704px 0px, rgb(0, 0, 0) -2.59586px -1.50383px 0px, rgb(0, 0, 0) -1.96093px -2.27041px 0px, rgb(0, 0, 0) -1.11013px -2.78704px 0px, rgb(0, 0, 0) -0.137119px -2.99686px 0px, rgb(0, 0, 0) 0.850987px -2.87677px 0px, rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px, rgb(0, 0, 0) 2.88051px -0.838247px 0px;
+    text-shadow: rgb(44, 53, 49) 2px 0px 0px, rgb(44, 53, 49) 1.75517px 0.958851px 0px, rgb(44, 53, 49) 1.0806px 1.68294px 0px, rgb(44, 53, 49) 0.141474px 1.99499px 0px, rgb(44, 53, 49) -0.832294px 1.81859px 0px, rgb(44, 53, 49) -1.60229px 1.19694px 0px, rgb(44, 53, 49) -1.97998px 0.28224px 0px, rgb(44, 53, 49) -1.87291px -0.701566px 0px, rgb(44, 53, 49) -1.30729px -1.5136px 0px, rgb(44, 53, 49) -0.421592px -1.95506px 0px, rgb(44, 53, 49) 0.567324px -1.91785px 0px, rgb(44, 53, 49) 1.41734px -1.41108px 0px, rgb(44, 53, 49) 1.92034px -0.558831px 0px;
 }
 
 #about h1 {
-    text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px, rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px, rgb(0, 0, 0) 0.705713px 2.91581px 0px, rgb(0, 0, 0) -0.287171px 2.98622px 0px, rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px, rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px, rgb(0, 0, 0) -2.94502px -0.571704px 0px, rgb(0, 0, 0) -2.59586px -1.50383px 0px, rgb(0, 0, 0) -1.96093px -2.27041px 0px, rgb(0, 0, 0) -1.11013px -2.78704px 0px, rgb(0, 0, 0) -0.137119px -2.99686px 0px, rgb(0, 0, 0) 0.850987px -2.87677px 0px, rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px, rgb(0, 0, 0) 2.88051px -0.838247px 0px;
+    text-shadow: rgb(44, 53, 49) 2px 0px 0px, rgb(44, 53, 49) 1.75517px 0.958851px 0px, rgb(44, 53, 49) 1.0806px 1.68294px 0px, rgb(44, 53, 49) 0.141474px 1.99499px 0px, rgb(44, 53, 49) -0.832294px 1.81859px 0px, rgb(44, 53, 49) -1.60229px 1.19694px 0px, rgb(44, 53, 49) -1.97998px 0.28224px 0px, rgb(44, 53, 49) -1.87291px -0.701566px 0px, rgb(44, 53, 49) -1.30729px -1.5136px 0px, rgb(44, 53, 49) -0.421592px -1.95506px 0px, rgb(44, 53, 49) 0.567324px -1.91785px 0px, rgb(44, 53, 49) 1.41734px -1.41108px 0px, rgb(44, 53, 49) 1.92034px -0.558831px 0px;
 }
 
 #about button span {
     cursor: pointer;
     display: inline-block;
     position: relative;
-    transition: 0.5s;  
-      
+    transition: 0.5s;        
 }
 
 #about button span:after {
-    content: "\00bb";
+    content: url(../img/marial.png);
     position: absolute;
     opacity: 0;
-    top: 0;
-    right: -20px;      
+    top: 0;    
 }
 
 #about button:hover span {
-    padding-right: 20px;     
+    padding-right: 150px;     
 }
 
 #about button:hover span:after {
@@ -161,30 +176,20 @@ section .heading h2{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* ABOUT */
 
 
 #about {
-    background-color: #3F8080;    
+    background-color: #116466;    
+    border-bottom: 1px solid #d9b08c;
 }
 
 #about h3 {
-    color: #000000;
+    color: black;    
 }
 
 #about img {
-    border: solid 0.2rem black;
+    border: solid 2px  #2c3531;
 }
 .profile-picture {
     text-align: center;
@@ -192,32 +197,27 @@ section .heading h2{
 }
 
 #about .heading h1 {
-    color: white; 
+    color: #ffcb9a; 
     margin-bottom: 20px;
     font-size: 60px;
 }
 
 .btncv {
-    color: black !important;
-    background-color: white !important;   
+    color: #2c3531 !important;
+    background-color: #ffcb9a !important;   
     margin-top: 25px;
+    margin-bottom: -15px;
     font-weight: bold;
     display: inline-block;
     transition: all 0.5s linear 0s !important;
-    border: solid 5px black !important;
+    border: solid 5px #2c3531 !important;
 }
 
 .btncv:hover {
-    border-color: white !important;
-    color: white !important;
-    background-color: black !important;
+    border-color: #ffcb9a !important;
+    color: #ffcb9a !important;
+    background-color: #2c3531 !important;
 }
-
-
-
-
-
-
 
 
 
@@ -240,39 +240,39 @@ section .heading h2{
 /*   SKILLS   */
 
 #skills {
-    background-color: black;
+    background-color: #2c3531;
+    border-bottom: 1px solid #d9b08c;
+}
+
+#skills .heading {
+    margin-bottom: -15px;
+}
+
+#skills h2 {
+    margin-bottom: 33px;
 }
 
 #skills .progress {
     height: 40px;
     margin: 25px 15px;
-    background-color: #7effff80 ;
+    background-color: #116466 ;
+    border: 1px solid #d9b08c;
 }
 
 #skills .progress:last-child {
     margin-bottom: 0px;
+    
 }
 
 #skills .progress-bar {
-    background-color: #00cbbc;
+    background-color: #ffcb9a;    
 }
 
-#skills .progress-bar h5 {
-    text-shadow: 1px 1px #005858;
+#skills .progress-bar h5 {    
     margin-bottom: -1px;
     font-size: 14px;
+    color: #2c3531;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -297,15 +297,14 @@ section .heading h2{
 
 
 #experience {
-    background-color: #3F8080 ;
+    background-color: #116466 ;
+    border-bottom: 1px solid #d9b08c;
 }
-
-.divider.white {
-    background-color: black;
+#experience h2 {
+    margin-bottom: 49px;
 }
-
 .timeline-content{
-    border: 1px solid #00cbbc;
+    border: 2px solid #ffcb9a;
 }
 
 
@@ -314,17 +313,18 @@ section .heading h2{
     padding: 10px;
     margin: 0 auto;
     overflow: hidden;
-    color: #ffffff;
+    color: #ffcb9a;
+    margin-bottom: -55px;
 }
 
 .timeline:after {
     content: "";
     position: absolute;
-    top: 0;
+    top: 10px;
     left: 50%;
     margin-left: -1px;
-    border-right: 2px dashed #c4d2e2;
-    height: 100%;
+    border-right: 2px double #d9b08c;
+    height: 95.5%;
     display: block;
 }
 
@@ -337,10 +337,10 @@ section .heading h2{
 .timeline-row .timeline-time {
     position: absolute;
     right: 50%;
-    top: 31px;
+    top: 13px;
     text-align: right;
     margin-right: 20px;
-    color: #000000;
+    color: black;
     font-size: 1.5rem;
 }
 
@@ -377,8 +377,8 @@ section .heading h2{
     -moz-border-radius: 100px;
     border-radius: 100px;
     z-index: 100;
-    background: #ffffff;
-    border: 2px dashed #c4d2e2;
+    background: #d1e8e2;
+    border: 2px dashed #d1e8e2;
 }
 
 .timeline-row .timeline-content h4 {
@@ -399,7 +399,7 @@ section .heading h2{
     color: #ffffff;
     line-height: 100%;
     padding: 10px;
-    border: 2px solid #00cbbc;
+    border: 2px solid #d1e8e2;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
     border-radius: 100px;
@@ -416,7 +416,7 @@ section .heading h2{
 }
 
 .timeline-row:nth-child(even) .timeline-content {
-    background-color: #fff;    
+    background-color: #d1e8e2;    
     margin-left: 40px;
     text-align: left;
     color: #000000;
@@ -426,7 +426,7 @@ section .heading h2{
 
 .timeline-row:nth-child(even) .timeline-content:after {
     left: -40px;
-    border-right: 16px solid #00cbbc;
+    border-right: 16px solid #ffcb9a;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
 }
@@ -450,7 +450,7 @@ section .heading h2{
 }
 
 .timeline-row:nth-child(odd) .timeline-content {
-    background-color: #fff;    
+    background-color: #d1e8e2;    
     margin-left: 40px;
     text-align: left;
     color: #000000;
@@ -461,7 +461,7 @@ section .heading h2{
 
 .timeline-row:nth-child(odd) .timeline-content:after {
     right: -40px;
-    border-left: 18px solid #00cbbc;
+    border-left: 18px solid #ffcb9a;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
 }
@@ -529,8 +529,8 @@ section .heading h2{
         right: auto;
         left: -39px;
         top: 32px;
-        border-right: 18px solid #00cbbc;
-        border-left: inherit;
+        border-right: 18px solid #d1e8e2;
+        border-left: none;
     }
     .timeline.animated .timeline-row:nth-child(odd) .timeline-content {
         left: 20px;
@@ -558,72 +558,52 @@ section .heading h2{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* FORMATIONS */
 
 
 #formation {
-    background-color: black;
+    background-color: #2c3531;
+    border-bottom: 1px solid #d9b08c;
 }
+
+#formation h5 {
+    color: black;
+}
+
+#formation h4 {
+    font-weight: bold;
+    color: black;
+}
+
+#formation h3 {
+    font-size: 24px;
+}
+
+#formation .formation-block {
+    color: black;
+    font-size: 25px;
+}
+
 
 #formation .heading h2{
-    margin: 25px 0px;
+    margin-top: 20px;
+    margin-bottom: 59px;
 }
 
+.bi-award-fill::before {
+    color: black;
+}
 
 .formation-block {
     width: 90%;
     margin: 0 auto;
     text-align: center;
     padding: 30px;
-    background: #3F8080;
+    background: #116466;
     border-radius: 5px;
-    border: 1px solid #00cbbc;
+    border: 1px solid #ffcb9a;
     box-shadow: 0 1px 6px rgba(0,0,0, 0.175);
-    margin-bottom: 20px;
+    margin-bottom: -15px;
 }
 
 .formation-block span {
@@ -631,7 +611,7 @@ section .heading h2{
 }
 
 .formation-block h3 {
-    color: #00cbbc;
+    color: #ffcb9a;
     margin: 15px 0;
 }
 
@@ -658,23 +638,21 @@ section .heading h2{
 
 
 
-
-
-
-
-
-
-
-
-
 /* PORTFOLIO */
 
 #portfolio {
-    background-color: #3F8080;;
+    background-color: #116466;
+    border-bottom: 1px solid #d9b08c;
 }
 
 #portfolio .heading h2 {
     margin: 25px 0px;
+}
+
+#portfolio p {
+    color: #ffcb9a;
+    margin-top: -18px;
+    font-size: 20px;
 }
 
 #portfolio img {
@@ -682,6 +660,7 @@ section .heading h2{
     height: 100%;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%); 
+    border: solid 5px #2c3531;
 }
 
 #portfolio img:hover {
@@ -703,27 +682,37 @@ section .heading h2{
 
 
 
+
+
+
+
+
+
+
+
 /* CONTACT */
 
 #contact {
 
-    background-color: black;   
+    background-color: #2c3531;   
+    border-bottom: 1px solid #d9b08c;
+    color: #d1e8e2;
 }
 
 .button1 {
-    color: white;
-    background-color: black;   
+    color: #ffcb9a;
+    background-color: #2c3531;   
     margin-top: 25px;
     font-weight: bold;
     display: inline-block;
     transition: all 0.5s linear 0s;
-    border: solid 5px white;
+    border: solid 5px #ffcb9a;
 }
 
 .button1:hover {
-    border-color: #00cbbc;
-    color: #00cbbc;
-    background-color: black;
+    border-color: #d1e8e2;
+    color: #d1e8e2;
+    background-color: #2c3531;
 }
 
 
@@ -746,18 +735,19 @@ section .heading h2{
 
 /* FOOTER */
 footer {
-    background-color: black ;    
+    background-color: #116466 ;    
     padding: 20px 0 250px;
 }
 footer span {
-    color:#00cbbc;
-    font-size: 50px;
+    color:#ffcb9a;
+    font-size: 75px;
+    font-weight: bold;
     line-height: 100px;
 }
 footer span:hover {
     font-size: 75px;
 }
 footer h5 {
-    color: white;
+    color: #ffcb9a;
     font-weight: normal;
 }
