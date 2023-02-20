@@ -17,7 +17,6 @@ function isPhone($zozo) {
 require('../js/recaptcha-master/src/autoload.php');
 
 
-
 // configure
 $from = 'Contact mempoule cv antoni <noreply@mempoule.lol>';
 $sendTo = 'AntoniSDev <antoni.salomon1337@gmail.com>';
@@ -72,6 +71,10 @@ try
 
         // everything went well, we can compose the message, as usually  
 
+
+
+
+
         
             
        
@@ -98,10 +101,17 @@ try
             echo "ceci n'est pas un numéro de téléphone valide";
             $isValid = false;
         };
+
+
+
+
+
+
+
         // if variable isValid true (rien = par defaut )
         if($isValid)
         {
-            $emailText = "You have new message from contact form\n=============================\n";
+            $emailText = "You have new message from contact form\n==\n===========================";
 
             foreach ($_POST as $key => $value) {
                 // si les $key des fields sont pas vides

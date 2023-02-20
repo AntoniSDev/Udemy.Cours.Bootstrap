@@ -18,7 +18,7 @@ h1,h2,h3,h4,h5,h6 {
 
 img {
     max-width: 100%;
-    height: auto;
+    height: auto;    
 }
 
 section {
@@ -64,9 +64,11 @@ section .heading h2{
 
 
 
+
+
 /* NAVBAR */
 .navbar {
-    background-color: #00cbbc;
+    background-color: black;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: bold;
@@ -82,8 +84,10 @@ section .heading h2{
 }
 .nav-link.active,
 .nav-link:hover {
-    background-color: white;
-    color: #00cbbc !important;
+    background-color: black;
+    color: white !important;    
+    border: solid 5px white;
+    border-radius: 0.375rem;
 }
 
 
@@ -104,16 +108,22 @@ section .heading h2{
 #about button {
     cursor: pointer;
     border: none;
-    color: #00cbbc;
+    color: #00CBBC;
     background-color: #ffffff00;  
-    outline: none;
+    outline: none;   
+    text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px, rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px, rgb(0, 0, 0) 0.705713px 2.91581px 0px, rgb(0, 0, 0) -0.287171px 2.98622px 0px, rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px, rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px, rgb(0, 0, 0) -2.94502px -0.571704px 0px, rgb(0, 0, 0) -2.59586px -1.50383px 0px, rgb(0, 0, 0) -1.96093px -2.27041px 0px, rgb(0, 0, 0) -1.11013px -2.78704px 0px, rgb(0, 0, 0) -0.137119px -2.99686px 0px, rgb(0, 0, 0) 0.850987px -2.87677px 0px, rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px, rgb(0, 0, 0) 2.88051px -0.838247px 0px;
+}
+
+#about h1 {
+    text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px, rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px, rgb(0, 0, 0) 0.705713px 2.91581px 0px, rgb(0, 0, 0) -0.287171px 2.98622px 0px, rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px, rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px, rgb(0, 0, 0) -2.94502px -0.571704px 0px, rgb(0, 0, 0) -2.59586px -1.50383px 0px, rgb(0, 0, 0) -1.96093px -2.27041px 0px, rgb(0, 0, 0) -1.11013px -2.78704px 0px, rgb(0, 0, 0) -0.137119px -2.99686px 0px, rgb(0, 0, 0) 0.850987px -2.87677px 0px, rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px, rgb(0, 0, 0) 2.88051px -0.838247px 0px;
 }
 
 #about button span {
     cursor: pointer;
     display: inline-block;
     position: relative;
-    transition: 0.5s;    
+    transition: 0.5s;  
+      
 }
 
 #about button span:after {
@@ -121,8 +131,7 @@ section .heading h2{
     position: absolute;
     opacity: 0;
     top: 0;
-    right: -20px;  
-    transition: all 0.5s ease-in 0s;
+    right: -20px;      
 }
 
 #about button:hover span {
@@ -167,30 +176,41 @@ section .heading h2{
 
 
 #about {
-    background-color: #80ffff85;    
+    background-color: #3F8080;    
 }
 
+#about h3 {
+    color: #000000;
+}
+
+#about img {
+    border: solid 0.2rem black;
+}
 .profile-picture {
     text-align: center;
     margin: 0px auto 30px;
 }
 
 #about .heading h1 {
-    color: grey; 
+    color: white; 
     margin-bottom: 20px;
+    font-size: 60px;
 }
 
-.button1 {
-    color: grey;
-    background-color: #80ffff85;   
+.btncv {
+    color: black !important;
+    background-color: white !important;   
     margin-top: 25px;
     font-weight: bold;
     display: inline-block;
-    transition: all 0.5s ease-in 0s;
+    transition: all 0.5s linear 0s !important;
+    border: solid 5px black !important;
 }
 
-.button1:hover {
-    border-color: #00cbbc;
+.btncv:hover {
+    border-color: white !important;
+    color: white !important;
+    background-color: black !important;
 }
 
 
@@ -219,8 +239,9 @@ section .heading h2{
 
 /*   SKILLS   */
 
-
-
+#skills {
+    background-color: black;
+}
 
 #skills .progress {
     height: 40px;
@@ -276,11 +297,11 @@ section .heading h2{
 
 
 #experience {
-    background-color: #80ffff85 ;
+    background-color: #3F8080 ;
 }
 
 .divider.white {
-    background-color: white;
+    background-color: black;
 }
 
 .timeline-content{
@@ -583,6 +604,11 @@ section .heading h2{
 
 /* FORMATIONS */
 
+
+#formation {
+    background-color: black;
+}
+
 #formation .heading h2{
     margin: 25px 0px;
 }
@@ -593,7 +619,7 @@ section .heading h2{
     margin: 0 auto;
     text-align: center;
     padding: 30px;
-    background: #80ffff85;
+    background: #3F8080;
     border-radius: 5px;
     border: 1px solid #00cbbc;
     box-shadow: 0 1px 6px rgba(0,0,0, 0.175);
@@ -626,10 +652,25 @@ section .heading h2{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* PORTFOLIO */
 
 #portfolio {
-    background-color: #80ffff85;;
+    background-color: #3F8080;;
 }
 
 #portfolio .heading h2 {
@@ -662,22 +703,59 @@ section .heading h2{
 
 
 
+/* CONTACT */
+
+#contact {
+
+    background-color: black;   
+}
+
+.button1 {
+    color: white;
+    background-color: black;   
+    margin-top: 25px;
+    font-weight: bold;
+    display: inline-block;
+    transition: all 0.5s linear 0s;
+    border: solid 5px white;
+}
+
+.button1:hover {
+    border-color: #00cbbc;
+    color: #00cbbc;
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 /* FOOTER */
 footer {
-    background-color: #80ffff85 ;
-    
+    background-color: black ;    
     padding: 20px 0 250px;
 }
 footer span {
     color:#00cbbc;
-    font-size: 25px;
-    line-height: 35px;
+    font-size: 50px;
+    line-height: 100px;
 }
 footer span:hover {
-    font-size: 27px;
+    font-size: 75px;
 }
 footer h5 {
     color: white;
