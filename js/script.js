@@ -35,7 +35,7 @@ mariol.play();
 
 
 
-
+/*
 
 
 $(function () {
@@ -95,3 +95,6 @@ $(function () {
     })
 
 });
+
+
+*/

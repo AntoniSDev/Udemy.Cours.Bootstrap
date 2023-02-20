@@ -127,12 +127,7 @@ section .heading h2{
     border: none;
     color: #d1e8e2;
     background-color: #ffffff00;  
-    outline: none;   
-    text-shadow: rgb(44, 53, 49) 2px 0px 0px, rgb(44, 53, 49) 1.75517px 0.958851px 0px, rgb(44, 53, 49) 1.0806px 1.68294px 0px, rgb(44, 53, 49) 0.141474px 1.99499px 0px, rgb(44, 53, 49) -0.832294px 1.81859px 0px, rgb(44, 53, 49) -1.60229px 1.19694px 0px, rgb(44, 53, 49) -1.97998px 0.28224px 0px, rgb(44, 53, 49) -1.87291px -0.701566px 0px, rgb(44, 53, 49) -1.30729px -1.5136px 0px, rgb(44, 53, 49) -0.421592px -1.95506px 0px, rgb(44, 53, 49) 0.567324px -1.91785px 0px, rgb(44, 53, 49) 1.41734px -1.41108px 0px, rgb(44, 53, 49) 1.92034px -0.558831px 0px;
-}
-
-#about h1 {
-    text-shadow: rgb(44, 53, 49) 2px 0px 0px, rgb(44, 53, 49) 1.75517px 0.958851px 0px, rgb(44, 53, 49) 1.0806px 1.68294px 0px, rgb(44, 53, 49) 0.141474px 1.99499px 0px, rgb(44, 53, 49) -0.832294px 1.81859px 0px, rgb(44, 53, 49) -1.60229px 1.19694px 0px, rgb(44, 53, 49) -1.97998px 0.28224px 0px, rgb(44, 53, 49) -1.87291px -0.701566px 0px, rgb(44, 53, 49) -1.30729px -1.5136px 0px, rgb(44, 53, 49) -0.421592px -1.95506px 0px, rgb(44, 53, 49) 0.567324px -1.91785px 0px, rgb(44, 53, 49) 1.41734px -1.41108px 0px, rgb(44, 53, 49) 1.92034px -0.558831px 0px;
+    outline: none;    
 }
 
 #about button span {
@@ -146,16 +141,18 @@ section .heading h2{
     content: url(../img/marial.png);
     position: absolute;
     opacity: 0;
+    z-index: -1;
     top: 0;    
 }
 
 #about button:hover span {
-    padding-right: 150px;     
+    padding-right: 175px;     
 }
 
 #about button:hover span:after {
     opacity: 1;
-    right: 0;     
+    right: 0; 
+    z-index: +1;    
 }
 
 
@@ -204,8 +201,7 @@ section .heading h2{
 
 .btncv {
     color: #2c3531 !important;
-    background-color: #ffcb9a !important;   
-    margin-top: 25px;
+    background-color: #ffcb9a !important;      
     margin-bottom: -15px;
     font-weight: bold;
     display: inline-block;
