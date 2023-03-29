@@ -132,7 +132,8 @@ try
             // osef c'est pour du ajax
             $responseArray = array('type' => 'success', 'message' => $okMessage);
         }
-        else {
+        else 
+        {
             echo "mail ou telephone pas valides, on envoie rien";
         };       
     }
